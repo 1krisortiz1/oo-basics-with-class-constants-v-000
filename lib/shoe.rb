@@ -16,6 +16,7 @@ end
 def brand=(brand)
   @brand = brand
   BRANDS << brand
+  brands
 end
 
 end
