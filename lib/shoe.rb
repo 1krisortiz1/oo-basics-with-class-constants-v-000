@@ -1,11 +1,13 @@
 class Shoe
-  attr_accessor :color, :size, :material
-  attr_reader :brand, :condition
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand
 
   BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    if !BRANDS << @brand
+    end
   end
 
 def cobble
@@ -16,7 +18,7 @@ end
 def brand=(brand)
   @brand = brand
   BRANDS << brand
-  brand
+
 end
 
 end
