@@ -14,7 +14,7 @@ def cobble
 end
 
 def brand=(brand)
-  @brand = grand
+  @brand = brand
   BRANDS << brand
 end
 
